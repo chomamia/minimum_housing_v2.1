@@ -23,22 +23,20 @@ FINAL_FEATURES_NAMES = ['area',
                         'ref_tinh_code',
                         'ref_huyen_code',
                         'ref_xa_code',
-                        'prj_name',
-                        'building_name']
+                        'prj_name']
 
 NUMERIC_FEATURES = ['area', 'pn', 'ref_tinh_code', 'ref_huyen_code', 'ref_xa_code']
 
 CATEGORICAL_FEATURES = ['duong',
-                        'prj_name',
-                        'building_name']
+                        'prj_name']
 
 LABEL_NAME = "price_on_met"
 
 LIGHTGBM_PARAMS = {"n_estimators": 10_000}
 
 
-PATH_FINAL_DATA = r"D:\data\housing\house\processed\final_data_20220921_with_code.csv"
-PATH_FINAL_MODEL = r"/minimum_housing\metadata\final_model_with_code.joblib"
+PATH_FINAL_DATA = r"C:\Users\huuph\OneDrive\Documents\chungcu\minimum_housing-model_to_golive_toan_quoc\final_data\data_bds112.csv"
+PATH_FINAL_MODEL = r"C:\Users\huuph\OneDrive\Documents\chungcu\minimum_housing-model_to_golive_toan_quoc\final_model\final_model_with_code.joblib"
 
 
 def load_and_transform_data():
